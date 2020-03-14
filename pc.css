@@ -1,0 +1,400 @@
+/*
+주요 색상: 21C921
+보조 색상: 8AEC8A
+공지,인기 색상: C5F5C5
+표만들기 칸 배경 색상: rgba(33, 201, 33, 0.3);
+*/
+
+html, body
+{
+height: auto;
+/*background: #000;*/
+/*background: linear-gradient(to bottom, #C5F5C5, #C5F5C5);*/
+}
+
+body{
+background: transparent;
+position: relative;
+background-image:url()
+}
+
+a /* 나머지 글씨 색상*/
+{
+color: #999;
+}
+
+*:focus {
+    outline: none;
+}
+
+header .row>div:nth-child(1) > a > img, /* 트게더 로고 제거*/
+#board-info #board-info-profile-img /* 스트리머 사진 제거*/
+{
+    display: none;
+}
+
+#board-info h1>a {
+    text-decoration: none;
+    color: #21C921;
+}
+
+header .row>div:nth-child(1)>a /* 트게더 로고 바꾸기*/
+{
+    display: block;
+    width: 139px; /* 로고 너비 */
+    height: 50px;
+    background-size: auto 50px;
+    background: url(https://cdn.discordapp.com/attachments/654516765790961688/676955696184557578/gotohome.png) no-repeat;
+}
+
+.col-xs-4:nth-child(1):before /* 사게더 로고 표시*/
+{
+    content: url();
+    left: 500px;
+    top: 4px;
+    position: absolute;
+}
+
+header #right-search-form>#right-search-btn /* 헤더 검색 돋보기 설정*/
+{
+    color: #ffffff;
+    font-size: 1.4em;
+}
+
+header #right-search-form>input[type=text] /* 헤더 검색 상자 변경*/
+{
+    border: 3px dashed #fff;
+    border-radius: 5px;
+    background: none;
+    font-size: 1.1em;
+    padding: 0.3em 0.5em;
+}
+
+header #header-bar>.row, /*헤더테두리*/
+#main .menu-wrapper, /*좌측메뉴테두리*/
+#main #main-content>div.frame /*메인테두리*/
+{
+border: none;
+border-radius: 10px;
+}
+
+#main #main-menu .menu-wrapper>.header /* 좌측 배너 헤더 */
+{
+    border-radius: 10px 10px 0 0;
+}
+
+#main .menu-wrapper a:nth-last-child(1) /* 좌측 배너 하단 */
+{
+    border-radius: 0px 0px 10px 10px;
+}
+
+.dropdown-menu /*드롭다운메뉴테두리*/
+{
+border: 2px solid #21C921;
+box-shadow: none;
+}
+
+#article-content-wrapper>.header, /*게시판내용윗줄*/
+.fr-toolbar, /*댓글쓰기윗줄*/
+#article-list #article-list-category, /*게시판카테고리윗줄*/
+.fr-popup /*댓글팝업윗줄*/
+{
+border-top: 2px dashed #21C921;
+}
+
+#article-list>.article-list-row.notice /* 게시판 게시글 공지*/
+{
+    background-color: #C5F5C5;
+}
+
+#article-list>.article-list-row.hot /* 게시판 게시글 인기*/
+{
+    background-color: #C5F5C5;
+}
+
+#article-list #article-list-category > a.active, /*게시판카테고리홈활성화*/
+#article-list #article-list-category>a:hover /*게시판카테고리홈호버*/
+{
+background: rgba(33, 201, 33, 0.3);
+}
+
+#article-list #article-list-category, /*게시판카테고리배경색*/
+#article-list #article-list-category>a /*게시판카테고리배경색before*/
+{
+background: #ffffff;
+}
+
+.fa-home /* 게시판 카테고리 홈 색상 설정*/
+{
+    color:#000;
+}
+
+#main .menu-wrapper>.header /*좌측 메뉴 '트게더 전체 메뉴' 설정*/
+{
+background: #ffffff;
+color: #000;
+padding: 0.45em 1.4em 0.45em 1em; /*기본값 0.45em 1.4em 0.45em 1em*/
+font-weight: normal;
+}
+
+header #header-bar #header-top-notice strong.notice-badge /*헤더 '광고' 설정*/
+{
+    background: #ffffff;
+    padding: 4px 8px;
+    color: #fff;
+    font-weight: normal;
+}
+
+#main .menu-wrapper .spacer /*좌측메뉴스페이서*/
+{
+height: 0em;/*스페이서높이*/
+}
+
+#main .menu-wrapper>a /*좌측메뉴구분선*/
+{
+border: none;
+}
+
+.dropdown-menu .divider /*드롭다운메뉴나눔선변경*/ {
+    height: 1px;
+    margin: 5px 0;
+    overflow: hidden;
+    background-color: #21C921;
+}
+
+.fr-popup .fr-input-line input.fr-not-empty:focus+label, .fr-popup .fr-input-line textarea.fr-not-empty:focus+label {
+    color: #21C921;
+}
+
+.fr-popup .fr-input-line input[type=text]:focus, .fr-popup .fr-input-line textarea:focus, 
+.fr-popup .fr-input-line input[type=text]:hover, .fr-popup .fr-input-line textarea:hover 
+{
+    border-bottom: solid 2px #21C921;
+}
+
+.fr-popup .fr-action-buttons button.fr-command, 
+.fr-popup .fr-action-buttons button.fr-command:hover 
+{
+    color: #21C921;
+}
+
+.fr-toolbar .fr-command.fr-btn.fr-active, .fr-popup .fr-command.fr-btn.fr-active {
+    color: #21C921;
+}
+
+.fr-popup .fr-color-hex-layer .fr-action-buttons button {
+    background-color: #fff;
+}
+
+.fr-popup .fr-table-size .fr-select-table-size>span.hover>span {
+    background: rgba(33, 201, 33, 0.3);
+    border: solid 1px #21C921;
+}
+
+.label-default {
+    background-color: #21C921;
+}
+
+.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button:hover {
+    background-color: #fff;
+}
+
+.fr-popup .fr-table-colors-hex-layer .fr-action-buttons button {
+    background-color: #fff;
+}
+
+#latestDropdownMenu>li>a>span.delrow,
+#favoriteDropdownMenu>li>a>span.delrow {
+    color: #21C921;
+}
+
+#article-list #article-option-area>#article-option-area-toggle-btn /*공지가리기버튼우측여백*/
+{
+    background: #eaeaea;
+    width: 36px;
+    height: 36px;
+    font-size: 15px;
+    line-height: 36px;
+    border: none;
+    margin: 0 14px 0 0;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+#main .menu-wrapper>a>em /* 메뉴 단축키 꾸미기 설정*/
+{
+    color: #21C921;
+    text-decoration: none;
+    font-style: normal;
+    width: 24px;
+    text-align: center;
+    display: inline-block;
+    font-weight: bold;
+}
+
+#board-info {
+    width: 100%;
+    height: 38px;
+    overflow: hidden;
+    line-height: 1;
+    padding: 1em;
+    margin: 0;
+}
+
+#board-info h1 {
+    font-size: 24px;
+    vertical-align: top;
+    padding-bottom: 3px;
+    float: left;
+    border: none;
+}
+
+#board-info #board-info-bottom {
+    float: right;
+    padding-top: 7px;
+}
+
+#board-info #board-info-bottom a /* 스트리머 이름 아래 글씨 설정*/
+{
+    font-size: 12px;
+    color: #21C921;
+    display: inline-block;
+    padding: 0 8px;
+    text-decoration: none;
+    border-right: 1px solid #ebebeb;
+}
+#board-info #viewers-area #viewers:before {
+    content: " ";
+    cursor: text;
+}
+#board-info #viewers-area #viewers:after {
+    content: " ";
+    cursor: text;
+}
+
+/*공지의 i 색상 변경*/
+span.a-badge i.fa.fa-info-circle {
+  color: #21C921;
+}
+
+small.favo i.fa.fa-heart {
+   color:#21C921;
+}
+
+/*확인했던 게시글 글씨 색상 변경*/
+#article-list>.article-list-row>.item>.list-title>a:visited {
+    color: #222 !important; 
+}
+
+#article-info>h2 span.category {
+color: #21C921 !important;
+}
+
+#article-list>.article-list-row /* 게시판 게시글 항목 오른쪽 줄 제거*/
+{
+border-right: none;
+}
+
+#article-list>.article-list-row>.item>.list-title>.list-writer.logged>span, /* 게시판 사용자 이름 설정*/
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-writer.logged, /* 게시판 게시글 내 사용자이름 설정*/ #article-reply-area #reply-best-area .reply>.reply-header>.reply-writer.logged
+{
+    color: #21C921;
+}
+
+#article-reply-area > .header h5, #article-reply-area > .header h5>a /* 게시판 게시글 내 댓글보기 버튼 설정*/
+{
+    font-size: 14px;
+    color: #21C921;
+    font-weight: bold;
+}
+
+#article-reply-area #reply-real-area .reply > .reply-header > .reply-menu > a, #article-reply-area #reply-best-area .reply>.reply-header>.reply-menu > a /* 게시판 게시글 내 댓글 항목 색상*/
+{
+    color: #21C921 !important;
+}
+
+#article-list>.article-list-row>.item>.list-title>small.comment-count /* 게시판 댓글수 설정*/
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 13px;
+    position: relative;
+    text-align: center;
+    padding: 0 5px;
+    color: #21C921;
+    word-break: break-word;
+    border-radius: 1px;
+    top: 2px;
+    float: left;
+}
+
+#article-list>.article-list-row>.item>.list-header>span /* 게시판 추천 수 꾸미기 설정*/
+{
+    background-color: #21C921;
+    color: #fff;
+    font-weight: bold;
+    padding: 1px 5px;
+    font-size: 11px;
+    border-radius: 100px;
+}
+
+/*img[alt="Broadcaster"],
+img[alt="Moderator"] {
+    display: none;
+}
+*/
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover /* 게시판 하단 현재 페이지 꾸미기 설정*/
+{
+    background-color: #21C921;
+    border-color: #21C921;
+}
+
+.pagination>li>a, .pagination>li>span /* 게시판 하단 페이지 꾸미기 설정*/
+{
+    color: #21C921;
+}
+
+.btn:hover,
+.btn:focus,
+.btn-primary, /* 버튼*/
+.btn-primary:hover, /* 버튼*/
+.btn-group-sm>.btn, .btn-sm, /* 게시판 게시글 내 버튼 설정*/
+#article-list #article-list-menu>.btn.write, /* 버튼 글쓰기*/
+#article-list #article-list-menu>.btn.del, /* 버튼 삭제*/
+#article-list #article-list-menu>.btn.cog, /* 버튼 설정*/
+#article-list #article-list-menu>.btn.best, /* 버튼 인기글*/
+.btn-info, /* 버튼 설문추가*/
+.btn-default /* 버튼 작성취소*/
+{
+color: #21C921 !important;
+background-image: none;
+background-color: transparent !important;
+border-color: #21C921;
+border-radius: 8px;
+}
+
+#comment-write-form #comment-write-button-area {
+    flex-direction: row;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+label.pull-left {
+    margin-bottom: 5px;
+}
+
+.pull-left {
+    margin-right: calc(100% - 100px);
+}
+
+#btnRereplyCancelBtn {
+    margin-right: 30px;
+}
+
+#writeCommentBtn {
+    flex: 1;
+}
+
+.fa-heart:before {
+    content: "\f005";
+}
