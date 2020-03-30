@@ -384,10 +384,10 @@ label.pull-left {
 .fa-heart:before {
     content: "\f005";
 }
-
+/*
 #article-list > #article-list-row-37681322,
 #article-list > #article-list-row-35505889,
 #article-list > #article-list-row-34173832 {
     display: none !important;
 }
-#movetotop img{display:none}
+#movetotop img{display:none}*/
